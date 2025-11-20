@@ -45,6 +45,7 @@ _Note: The methodology correctly stabilizes the Gamma calculation by using a wid
 
 ### 1. Model Dynamics
 The underlying asset price is modeled using Geometric Brownian Motion (GBM):
+
 $$
 dS_t = r S_t \, dt + \sigma S_t \, dW_t
 $$
