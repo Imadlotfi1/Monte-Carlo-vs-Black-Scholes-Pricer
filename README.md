@@ -45,7 +45,9 @@ _Note: The methodology correctly stabilizes the Gamma calculation by using a wid
 
 ### 1. Model Dynamics
 The underlying asset price is modeled using Geometric Brownian Motion (GBM):
-$$ dS_t = r S_t dt + \sigma S_t dW_t $$
+$$
+dS_t = r S_t \, dt + \sigma S_t \, dW_t
+$$
 
 ### 2. Numerical Greeks Calculation
 The Greeks are estimated using the **Finite Difference Method** combined with the **Common Random Numbers (CRN)** variance reduction technique. This ensures that the noise from the simulation is minimized when calculating sensitivities.
